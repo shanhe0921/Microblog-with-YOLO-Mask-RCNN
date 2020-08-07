@@ -1,0 +1,120 @@
+2020-05-24 19:13:11,422 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 176, in detect_image_mask
+    image, data = mask_rcnn.detect_image(photos.path(filename))
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 91, in detect_image
+    results = model.detect([image], verbose=1)
+  File "D:/yolo/Mask_RCNN-master\mrcnn\model.py", line 2524, in detect
+    self.keras_model.predict([molded_images, image_metas, anchors], verbose=0)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\engine\training.py", line 1832, in predict
+    self._make_predict_function()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\engine\training.py", line 1029, in _make_predict_function
+    **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\backend\tensorflow_backend.py", line 2502, in function
+    return Function(inputs, outputs, updates=updates, **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\backend\tensorflow_backend.py", line 2445, in __init__
+    with tf.control_dependencies(self.outputs):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 5004, in control_dependencies
+    return get_default_graph().control_dependencies(control_inputs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 4543, in control_dependencies
+    c = self.as_graph_element(c)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 3490, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 3569, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("mrcnn_detection/Reshape_1:0", shape=(1, 100, 6), dtype=float32) is not an element of this graph.
+2020-05-24 19:49:26,072 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 19:50:00,815 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 176, in detect_image_mask
+    ax, image, result = mask_rcnn.detect_image(photos.path(filename))
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 91, in detect_image
+    results = model.detect([image], verbose=1)
+  File "D:/yolo/Mask_RCNN-master\mrcnn\model.py", line 2524, in detect
+    self.keras_model.predict([molded_images, image_metas, anchors], verbose=0)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\engine\training.py", line 1832, in predict
+    self._make_predict_function()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\engine\training.py", line 1029, in _make_predict_function
+    **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\backend\tensorflow_backend.py", line 2502, in function
+    return Function(inputs, outputs, updates=updates, **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\backend\tensorflow_backend.py", line 2445, in __init__
+    with tf.control_dependencies(self.outputs):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 5004, in control_dependencies
+    return get_default_graph().control_dependencies(control_inputs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 4543, in control_dependencies
+    c = self.as_graph_element(c)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 3490, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 3569, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("mrcnn_detection/Reshape_1:0", shape=(1, 100, 6), dtype=float32) is not an element of this graph.
+2020-05-24 19:52:53,825 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 19:53:16,807 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 176, in detect_image_mask
+    ax, image, result = mask_rcnn.detect_image(photos.path(filename))
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 92, in detect_image
+    results = model.detect([image], verbose=1)
+  File "D:/yolo/Mask_RCNN-master\mrcnn\model.py", line 2524, in detect
+    self.keras_model.predict([molded_images, image_metas, anchors], verbose=0)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\engine\training.py", line 1832, in predict
+    self._make_predict_function()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\engine\training.py", line 1029, in _make_predict_function
+    **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\backend\tensorflow_backend.py", line 2502, in function
+    return Function(inputs, outputs, updates=updates, **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\keras\backend\tensorflow_backend.py", line 2445, in __init__
+    with tf.control_dependencies(self.outputs):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 5004, in control_dependencies
+    return get_default_graph().control_dependencies(control_inputs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 4543, in control_dependencies
+    c = self.as_graph_element(c)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 3490, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\tensorflow\python\framework\ops.py", line 3569, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("mrcnn_detection/Reshape_1:0", shape=(1, 100, 6), dtype=float32) is not an element of this graph.
+2020-05-24 19:56:59,466 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]

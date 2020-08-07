@@ -1,0 +1,110 @@
+2020-05-22 13:14:13,921 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 16:59:59,613 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:01:00,692 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:01:40,972 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:03:52,115 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:14:30,715 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:15:00,434 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 188, in detect_image_mask
+    return render_template('detected.html', file_url=file_url)
+UnboundLocalError: local variable 'file_url' referenced before assignment
+2020-05-24 17:18:10,441 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:18:38,915 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 188, in detect_image_mask
+    return render_template('detected.html', file_url=file_url)
+UnboundLocalError: local variable 'file_url' referenced before assignment
+2020-05-24 17:18:52,552 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:19:56,986 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:20:18,957 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 176, in detect_image_mask
+    image, data = mask_rcnn.detect_image(PIL.Image.open(photos.path(filename)))
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 89, in detect_image
+    image = skimage.io.imread(os.path.join(PHOTOS_DIR, filename))
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\ntpath.py", line 115, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\genericpath.py", line 149, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'JpegImageFile'
+2020-05-24 17:22:00,513 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:22:21,525 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 176, in detect_image_mask
+    image, data = mask_rcnn.detect_image(PIL.Image.open(photos.path(filename)))
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 89, in detect_image
+    image = skimage.io.imread(filename)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_io.py", line 48, in imread
+    img = call_plugin('imread', fname, plugin=plugin, **plugin_args)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\manage_plugins.py", line 209, in call_plugin
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_plugins\imageio_plugin.py", line 10, in imread
+    return np.asarray(imageio_imread(*args, **kwargs))
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 265, in imread
+    reader = read(uri, format, "i", **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 172, in get_reader
+    request = Request(uri, "r" + mode, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 121, in __init__
+    self._parse_uri(uri)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 219, in _parse_uri
+    raise IOError("Cannot understand given URI: %s." % uri_r)
+OSError: Cannot understand given URI: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=10....
+2020-05-24 17:23:25,051 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-24 17:25:23,100 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]

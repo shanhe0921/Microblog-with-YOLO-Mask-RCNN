@@ -1,0 +1,87 @@
+2020-06-30 13:29:58,707 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 13:32:28,376 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 13:36:15,791 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 13:37:06,449 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 14:09:08,631 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 14:11:07,030 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 14:18:14,477 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 14:28:54,202 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-06-30 15:04:37,349 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-01 13:14:03,686 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-01 13:17:41,645 ERROR: Exception on /api/uploads [POST] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_httpauth.py", line 162, in decorated
+    return f(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 178, in post_image_api
+    image = Image(address=filename, upmaster=g.user.username)
+  File "<string>", line 4, in __init__
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\orm\state.py", line 433, in _initialize_instance
+    manager.dispatch.init_failure(self, args, kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\util\langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\util\compat.py", line 178, in raise_
+    raise exception
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\orm\state.py", line 430, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\ext\declarative\base.py", line 842, in _declarative_constructor
+    setattr(self, k, kwargs[k])
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\orm\attributes.py", line 273, in __set__
+    instance_state(instance), instance_dict(instance), value, None
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\orm\attributes.py", line 1019, in set
+    value = self.fire_replace_event(state, dict_, value, old, initiator)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\orm\attributes.py", line 1042, in fire_replace_event
+    state, value, previous, initiator or self._replace_token
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\sqlalchemy\orm\attributes.py", line 1451, in emit_backref_from_scalar_set_event
+    instance_state(child),
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+2020-07-01 13:19:51,632 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-02 14:49:06,271 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-02 14:55:37,899 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-02 14:57:04,813 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-02 14:57:37,104 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-02 14:58:33,554 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-03 14:12:34,421 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-03 14:13:56,274 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-03 14:14:10,445 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-03 14:45:58,972 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-03 14:46:05,105 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-06 10:25:42,878 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 15:23:23,685 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 16:36:02,134 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:01:55,030 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:02:43,630 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:03:58,501 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:05:05,657 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:05:54,292 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:06:33,683 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:07:04,147 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:08:45,364 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:11:54,601 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:15:41,895 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:16:27,980 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:16:52,835 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:18:36,471 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:19:04,543 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-08 19:19:34,871 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:18:55,357 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:20:19,821 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:20:51,406 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:27:56,097 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:28:27,284 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:39:26,249 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:39:49,871 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 09:40:18,147 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-09 14:12:22,017 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
+2020-07-16 13:53:14,020 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]

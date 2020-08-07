@@ -1,0 +1,125 @@
+2020-05-24 20:16:31,582 ERROR: Exception on /detect_mask/f2cad8e943778cc.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 180, in detect_image_mask
+    plt.show()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\pyplot.py", line 269, in show
+    return _show(*args, **kw)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\cbook\deprecation.py", line 413, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backend_bases.py", line 3309, in show
+    cls.mainloop()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backends\_backend_tk.py", line 981, in mainloop
+    managers[0].window.mainloop()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 1283, in mainloop
+    self.tk.mainloop(n)
+RuntimeError: Calling Tcl from different appartment
+2020-05-25 12:19:37,604 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 184, in detect_image_mask
+    plt.savefig(filepath, bbox_inches='tight')
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\pyplot.py", line 723, in savefig
+    fig.canvas.draw_idle()   # need this if 'transparent=True' to reset colors
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backends\_backend_tk.py", line 342, in draw_idle
+    self._idle_callback = self._tkcanvas.after_idle(idle_draw)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 764, in after_idle
+    return self.after('idle', func, *args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 756, in after
+    name = self._register(callit)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 1372, in _register
+    self.tk.createcommand(name, f)
+RuntimeError: main thread is not in main loop
+2020-05-25 12:23:21,627 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-25 12:37:42,717 ERROR: Exception on /detect_mask/f2cad8e943778cc.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 180, in detect_image_mask
+    plt.show()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\pyplot.py", line 269, in show
+    return _show(*args, **kw)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\cbook\deprecation.py", line 413, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backend_bases.py", line 3309, in show
+    cls.mainloop()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backends\_backend_tk.py", line 981, in mainloop
+    managers[0].window.mainloop()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 1283, in mainloop
+    self.tk.mainloop(n)
+RuntimeError: Calling Tcl from different appartment
+2020-05-25 12:38:00,621 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 180, in detect_image_mask
+    plt.show()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\pyplot.py", line 269, in show
+    return _show(*args, **kw)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\cbook\deprecation.py", line 413, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backend_bases.py", line 3291, in show
+    manager.canvas.figure.show()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\figure.py", line 442, in show
+    manager.show()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backends\_backend_tk.py", line 550, in show
+    self.canvas.draw_idle()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\matplotlib\backends\_backend_tk.py", line 342, in draw_idle
+    self._idle_callback = self._tkcanvas.after_idle(idle_draw)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 764, in after_idle
+    return self.after('idle', func, *args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 756, in after
+    name = self._register(callit)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\tkinter\__init__.py", line 1372, in _register
+    self.tk.createcommand(name, f)
+RuntimeError: main thread is not in main loop

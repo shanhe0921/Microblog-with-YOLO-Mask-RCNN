@@ -1,0 +1,130 @@
+2020-05-20 15:29:49,134 ERROR: Exception on /detect/f2cad8e943778cc.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 164, in detect_image
+    return render_template('detected.html', file_url=file_url)
+UnboundLocalError: local variable 'file_url' referenced before assignment
+2020-05-20 15:32:21,773 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-20 15:33:42,842 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-20 15:33:59,847 ERROR: Exception on /detect/f2cad8e943778cc.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 158, in detect_image
+    filepath = os.path.join(app.config['DETECTED_PHOTOS_DEST'], filename)
+KeyError: 'DETECTED_PHOTOS_DEST'
+2020-05-20 15:34:46,035 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-20 15:36:39,946 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-20 15:37:22,741 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-20 15:48:29,583 ERROR: Exception on /detect/d7561afbc3fe59e.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 165, in detect_image
+    return render_template('detected.html', file_url=file_url)
+UnboundLocalError: local variable 'file_url' referenced before assignment
+2020-05-20 15:48:44,088 ERROR: Exception on /detect/d7561afbc3fe59e.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 165, in detect_image
+    return render_template('detected.html', file_url=file_url)
+UnboundLocalError: local variable 'file_url' referenced before assignment
+2020-05-21 14:24:56,552 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-22 12:41:38,119 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-22 12:42:33,984 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-05-22 12:42:48,810 ERROR: Exception on /manage [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 135, in manage_file
+    return render_template('manage.html', files_list=files_list)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\ZHENG\Desktop\microblog\app\templates\manage.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\ZHENG\Desktop\microblog\app\templates\base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\ZHENG\Desktop\microblog\app\templates\manage.html", line 12, in block "content"
+    <a href="{{ url_for('detect_image', filename=photo) }}">detect</a>
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\werkzeug\routing.py", line 2182, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'detect_image' with values ['filename']. Did you mean 'detect_image_yolo' instead?
+2020-05-22 12:44:05,200 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]

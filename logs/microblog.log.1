@@ -1,0 +1,129 @@
+2020-06-02 09:41:42,205 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 184, in detect_image_mask
+    image, result = m.detect_image(photos.path(filename))
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 96, in detect_image
+    image = skimage.io.imread(filename)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_io.py", line 48, in imread
+    img = call_plugin('imread', fname, plugin=plugin, **plugin_args)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\manage_plugins.py", line 209, in call_plugin
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_plugins\imageio_plugin.py", line 10, in imread
+    return np.asarray(imageio_imread(*args, **kwargs))
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 265, in imread
+    reader = read(uri, format, "i", **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 172, in get_reader
+    request = Request(uri, "r" + mode, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 121, in __init__
+    self._parse_uri(uri)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 257, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: 'C:\Users\ZHENG\Desktop\microblog\upload\15822f5e47f86fd_mask_detected.jpg'
+2020-06-02 12:01:37,731 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-06-02 12:04:20,493 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-06-02 12:04:41,772 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 185, in detect_image_mask
+    results = m.detect_image(filedir, filename)
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 96, in detect_image
+    image = skimage.io.imread(filename)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_io.py", line 48, in imread
+    img = call_plugin('imread', fname, plugin=plugin, **plugin_args)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\manage_plugins.py", line 209, in call_plugin
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_plugins\imageio_plugin.py", line 10, in imread
+    return np.asarray(imageio_imread(*args, **kwargs))
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 265, in imread
+    reader = read(uri, format, "i", **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 172, in get_reader
+    request = Request(uri, "r" + mode, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 121, in __init__
+    self._parse_uri(uri)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 257, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: 'C:\Users\ZHENG\Desktop\microblog\15822f5e47f86fd_mask_detected.jpg'
+2020-06-02 12:05:49,037 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-06-02 12:06:11,447 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 185, in detect_image_mask
+    results = m.detect_image(filedir, filename)
+  File "D:/yolo/Mask_RCNN-master\mask_rcnn.py", line 96, in detect_image
+    image = skimage.io.imread(filename)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_io.py", line 48, in imread
+    img = call_plugin('imread', fname, plugin=plugin, **plugin_args)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\manage_plugins.py", line 209, in call_plugin
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\skimage\io\_plugins\imageio_plugin.py", line 10, in imread
+    return np.asarray(imageio_imread(*args, **kwargs))
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 265, in imread
+    reader = read(uri, format, "i", **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\functions.py", line 172, in get_reader
+    request = Request(uri, "r" + mode, **kwargs)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 121, in __init__
+    self._parse_uri(uri)
+  File "C:\Users\ZHENG\AppData\Roaming\Python\Python36\site-packages\imageio\core\request.py", line 257, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: 'C:\Users\ZHENG\Desktop\microblog\15822f5e47f86fd.jpg'
+2020-06-02 12:07:12,442 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:43]
+2020-06-02 12:07:34,931 ERROR: Exception on /detect_mask/15822f5e47f86fd.jpg [GET] [in c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\zheng\anaconda3\envs\yolo\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ZHENG\Desktop\microblog\app\routes.py", line 183, in detect_image_mask
+    filedir = app.config['UPLOADED_UPLOAD_DEST']
+KeyError: 'UPLOADED_UPLOAD_DEST'
+2020-06-30 13:27:45,034 INFO: Microblog startup [in C:\Users\ZHENG\Desktop\microblog\app\__init__.py:56]
