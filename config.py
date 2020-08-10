@@ -17,3 +17,4 @@ class Config:
     UPLOADED_PHOTOS_DEST = 'C:/Users/ZHENG/Desktop/microblog/upload'
     UPLOADED_DETECTED_DEST = 'C:/Users/ZHENG/Desktop/microblog/detected'
     MAX_CONTENT_LENGTH = 16*1024*1024
+    POSTS_PER_PAGE = 3
